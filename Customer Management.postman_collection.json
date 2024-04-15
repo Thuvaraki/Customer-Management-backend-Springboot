@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "3e84e95f-2302-4052-805a-711650da7552",
+		"name": "Customer Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31969805"
+	},
+	"item": [
+		{
+			"name": "Get All Customers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/api/v1/customer/getAllCustomers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"v1",
+						"customer",
+						"getAllCustomers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Customer",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/api/v1/customer/deletecustomer/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"v1",
+						"customer",
+						"deletecustomer",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Keerthy\",\r\n    \"address\": \"Jaffna\",\r\n    \"mobile\": \"0755808457\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/api/v1/customer/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"v1",
+						"customer",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Customer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"52\",\r\n    \"name\": \"Keerthy\",\r\n    \"address\": \"Jaffna\",\r\n    \"mobile\": \"0755808467\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/api/v1/customer/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"v1",
+						"customer",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
